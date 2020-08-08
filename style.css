@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+background-color: #264653;
+min-height: 70vh;
+padding: 1rem;
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #A8DADC;
+font-family: Lemonada, cursive;
+text-align: center;
+font-size: 120%;
+}
+
+@media only screen and (min-width: 600px){
+    body{
+        min-height: 100vh;
+    }
+}
+
+.blk{
+    color: black
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    max-width: 500px;
+    min-width: 250px;
+    background-size: 25px 25px;
+    border-radius: 20px;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: 4px 3px 7px 3px rgb(53, 46, 53);
+    background: rgb(168,218,220);
+    background: linear-gradient(90deg, rgba(168,218,220,1) 0%, rgba(38,70,83,1) 100%);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width:600px){
+    .header-title{
+        font-size: 2rem;
+    }
+}
+
+.header-title{
+    transform: rotate(3deg);
+    padding: 0.2rem 1.5rem;
+    font-size: 1.5rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20% 5%;
+}
+
+.header-img{
+    width: 25%;
+    margin-right: 5px;
+}
+
+.form-label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-input{
+    background-color: transparent;
+    box-sizing: border-box;
+    font-family: Lemonda,'Courier New', Courier, monospace;
+    font-size: 1rem;
+    padding: 0.7rem;
+    width:75%;
+    margin-bottom: 20px;
+    border:solid 2px transparent;
+    border-bottom: dashed 2px black;
+    border-bottom-right-radius: 15px 4px;
+    border-bottom-left-radius: 4px 15px;
+    color: #774936;
+}
+
+.form-input:focus{
+    outline: none;
+    border: solid 2px black;
+}
+
+@media only screen and (min-width: 600px){
+    .form-input{
+        width: 60%;
+    }
+}
+
+.button{
+    padding: 0;
+    border:none;
+    transform: rotate(5deg);
+    transform-origin: center;
+    text-decoration: none;
+    font-family: Lemonda,'Courier New', Courier, monospace;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 0 black;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    color: #A8DADC;
+}
+
+.button > span{
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid hsl(198, 1%, 29%);
+}
+
+.button:active, .button:focus{
+    transform: translateY(5px);
+    padding-bottom: 0px;
+    outline: 1px;
+}
+
+.to-do-list {
+    text-align:left;
+}
+
+.to-do-list > li {
+    color: black;
+    list-style-type: none;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.to-do-list >li:hover{
+    text-decoration: line-through wavy red;
+}
+
+.hide-button {
+    float: right;
+    margin-top: -13px;
+    font-size: 11px;
+    font-family: helvetica;
+    color: tray;
+    display: none;
+}
+
+
+.to-do-list li:hover .hide-button {
+    display: block;
+}
+
+.foot{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
